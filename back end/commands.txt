@@ -1,0 +1,60 @@
+wsl // ubuntu
+
+move to home:
+cd ~
+
+create folder:
+mkdir flask_api
+
+move into folder:
+cd flask_api
+
+sudo apt install python3
+sudo apt install python3-venv
+sudo apt install python3-pip
+
+# create the virutal evn
+python3 -m venv venv
+
+#activate vitrual evn
+source venv/bin/activate
+
+# install flask and requests
+pip install flask
+pip install requests
+
+# create code
+# run server
+python3 server.py
+
+# deactivate virtual evn
+deactivate
+
+^C(venv) jake@JAKE-DELLXPS:~/flask_api$ export FLASK_APP=server.py
+(venv) jake@JAKE-DELLXPS:~/flask_api$ export FLASK_ENV=development
+(venv) jake@JAKE-DELLXPS:~/flask_api$ flask run
+
+# MongoDB
+# check status / start mongoDB service
+sudo service mongodb start
+sudo service mongodb status
+
+#MongoDB Shell
+show dbs
+user <dbName>
+show collections
+db.<collection>.find({})
+
+#github
+git add . 
+git commit -m "<a message>"
+git push
+
+/*** How to start the projects:** -
+ Start mongo service:* 
+sudo service mongodb start** 
+- start the backend* 
+source venv/bin/activate* 
+./runserver*** - 
+start the front end* npm start**/
+
